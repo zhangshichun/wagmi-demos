@@ -1,5 +1,5 @@
 import { http, createConfig } from 'wagmi'
-import { mainnet } from 'wagmi/chains'
+import { mainnet, goerli, sepolia, base } from 'wagmi/chains'
 import { walletConnect, injected } from 'wagmi/connectors'
 
 // a temp project id for testing
@@ -15,9 +15,12 @@ export const WCConnector = walletConnect({
   }, })
 
 export const config = createConfig({
-  chains: [mainnet],
+  chains: [mainnet, goerli, sepolia, base],
   transports: {
     [mainnet.id]: http(),
+    [goerli.id]: http(),
+    [sepolia.id]: http(),
+    [base.id]: http(),
   },
   connectors: [
     WCConnector,
