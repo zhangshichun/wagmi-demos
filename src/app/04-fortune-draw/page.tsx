@@ -56,7 +56,7 @@ const Page = () => {
     queue.addAll(fns, {});
     setLoading(true);
     queue.start();
-    queue.on("idle", () => {
+    queue.once("idle", () => {
       setLoading(false);
       Modal.info({
         title: "It's Ok",
