@@ -12,6 +12,11 @@ export default function Home() {
             reading-chains-and-blocks
           </Link>
         </li>
+        <li>
+          <Link href="/03-batch-create-accounts">
+            batch-create-accounts
+          </Link>
+        </li>        
       </ol>
     </main>
   );
