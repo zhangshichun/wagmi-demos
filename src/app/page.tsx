@@ -16,7 +16,10 @@ export default function Home() {
           <Link href="/03-batch-create-accounts">
             batch-create-accounts
           </Link>
-        </li>        
+        </li>
+        <li>
+          <Link href="/04-fortune-draw">fortune-draw</Link>
+        </li>
       </ol>
     </main>
   );
